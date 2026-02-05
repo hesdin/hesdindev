@@ -117,9 +117,9 @@ const socialLinks: SocialLink[] = [
 ];
 
 const contactDetails: ContactInfo[] = [
-  { label: "Email", value: "hello@hesdin.dev" },
-  { label: "Phone", value: "+1 (555) 024-8821" },
-  { label: "Address", value: "Remote • United States" },
+  { label: "Email", value: "hesdinmukhsin@gmail.com" },
+  { label: "Phone", value: "+62 853-9873-7159" },
+  { label: "Address", value: "Makassar . Indonesia" },
 ];
 
 export const content: Record<Language, ContentBundle> = {
