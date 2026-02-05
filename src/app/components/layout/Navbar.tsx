@@ -38,15 +38,7 @@ export default function Navbar() {
             {t.contactButton}
           </Button>
         </div>
-        <div className="flex items-center gap-3 md:hidden">
-          <Link
-            href="#contact"
-            className="rounded-md border border-[color:var(--border-soft)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
-          >
-            {t.contactButton}
-          </Link>
-          <LanguageToggle />
-          <ThemeToggle />
+        <div className="flex items-center gap-2 md:hidden">
           <button
             type="button"
             onClick={() => setIsOpen((prev) => !prev)}
@@ -65,6 +57,19 @@ export default function Navbar() {
       </div>
       {isOpen ? (
         <div className="border-t border-[color:var(--border)] bg-[color:var(--surface-nav)] px-6 py-6 md:hidden">
+          <div className="mb-6 flex items-center justify-between gap-3">
+            <Link
+              href="#contact"
+              className="inline-flex w-full items-center justify-center rounded-md border border-[color:var(--border-soft)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
+              onClick={() => setIsOpen(false)}
+            >
+              {t.contactButton}
+            </Link>
+          </div>
+          <div className="mb-6 flex items-center justify-between gap-3">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
           <nav className="flex flex-col gap-4 text-sm text-[color:var(--text-muted)]">
             {t.navLinks.map((link) => (
               <Link
@@ -76,13 +81,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="#contact"
-              className="mt-2 inline-flex w-fit rounded-md border border-[color:var(--border-soft)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
-              onClick={() => setIsOpen(false)}
-            >
-              {t.contactButton}
-            </Link>
           </nav>
         </div>
       ) : null}

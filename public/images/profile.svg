@@ -1,11 +1,19 @@
 <svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="640" height="640" rx="36" fill="#141414"/>
-  <rect x="32" y="32" width="576" height="576" rx="28" stroke="#2A2A2A" stroke-width="2"/>
-  <circle cx="320" cy="258" r="92" fill="#1F1F1F" stroke="#3A3A3A" stroke-width="2"/>
-  <rect x="160" y="372" width="320" height="168" rx="84" fill="#1F1F1F" stroke="#3A3A3A" stroke-width="2"/>
-  <path d="M220 260C238 234 266 218 296 218C326 218 354 234 372 260" stroke="#6B6B6B" stroke-width="6" stroke-linecap="round"/>
-  <path d="M256 288C268 296 282 300 296 300C310 300 324 296 336 288" stroke="#8F8F8F" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="288" cy="250" r="8" fill="#9A9A9A"/>
-  <circle cx="352" cy="250" r="8" fill="#9A9A9A"/>
-  <text x="320" y="560" text-anchor="middle" fill="#6B6B6B" font-family="Arial, Helvetica, sans-serif" font-size="18">Profile</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" rx="36" fill="url(#bg)"/>
+  <rect x="32" y="32" width="576" height="576" rx="30" stroke="#2b2b2b" stroke-width="2"/>
+  <rect x="72" y="72" width="496" height="496" rx="26" fill="#1b1b1b" stroke="#2f2f2f" stroke-width="2"/>
+
+  <circle cx="320" cy="245" r="78" fill="#232323" stroke="#3a3a3a" stroke-width="2"/>
+  <rect x="170" y="350" width="300" height="170" rx="85" fill="#232323" stroke="#3a3a3a" stroke-width="2"/>
+
+  <path d="M260 240Q320 205 380 240" stroke="#8a8a8a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="292" cy="248" r="6" fill="#a0a0a0"/>
+  <circle cx="348" cy="248" r="6" fill="#a0a0a0"/>
+  <path d="M282 276Q320 296 358 276" stroke="#a0a0a0" stroke-width="6" stroke-linecap="round"/>
 </svg>

@@ -6,6 +6,7 @@ import FAQ from "./components/sections/FAQ";
 import Gallery from "./components/sections/Gallery";
 import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
+import Pricing from "./components/sections/Pricing";
 import Services from "./components/sections/Services";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <Pricing />
         <Projects />
         <Gallery />
         <About />

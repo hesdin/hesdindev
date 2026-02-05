@@ -134,7 +134,7 @@ export const content: Record<Language, ContentBundle> = {
     ],
     contactButton: "Contact",
     hero: {
-      location: "Boston, Massachusetts",
+      location: "Makassar, Indonesia",
       headline: "I'm Hesdin, Web Developer",
       description:
         "I specialize in crafting modern, high-performing websites that help brands stand out and convert visitors into loyal clients.",
@@ -332,7 +332,7 @@ export const content: Record<Language, ContentBundle> = {
     ],
     contactButton: "Contact",
     hero: {
-      location: "Boston, Massachusetts",
+      location: "Makassar, Indonesia",
       headline: "I'm Hesdin, Web Developer",
       description:
         "Saya membantu brand membangun website modern dan berperforma tinggi agar tampil menonjol dan mengubah pengunjung menjadi klien.",
