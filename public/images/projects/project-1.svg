@@ -1,0 +1,14 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="560" rx="24" fill="#111111"/>
+  <rect x="28" y="28" width="844" height="504" rx="20" fill="#171717" stroke="#2A2A2A" stroke-width="2"/>
+  <rect x="64" y="80" width="260" height="28" rx="8" fill="#242424"/>
+  <rect x="64" y="130" width="360" height="16" rx="8" fill="#1E1E1E"/>
+  <rect x="64" y="160" width="320" height="16" rx="8" fill="#1E1E1E"/>
+  <rect x="64" y="204" width="160" height="36" rx="18" fill="#E6E6E6"/>
+  <rect x="236" y="204" width="160" height="36" rx="18" fill="#1F1F1F" stroke="#343434" stroke-width="2"/>
+  <rect x="448" y="100" width="380" height="300" rx="18" fill="#1B1B1B" stroke="#2F2F2F" stroke-width="2"/>
+  <rect x="472" y="124" width="156" height="12" rx="6" fill="#2A2A2A"/>
+  <rect x="472" y="148" width="120" height="10" rx="5" fill="#222222"/>
+  <rect x="472" y="182" width="320" height="176" rx="12" fill="#222222"/>
+  <text x="88" y="340" fill="#6B6B6B" font-family="Arial, Helvetica, sans-serif" font-size="18">Featured Project Preview</text>
+</svg>

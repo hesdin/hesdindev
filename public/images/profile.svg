@@ -1,0 +1,11 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="640" rx="36" fill="#141414"/>
+  <rect x="32" y="32" width="576" height="576" rx="28" stroke="#2A2A2A" stroke-width="2"/>
+  <circle cx="320" cy="258" r="92" fill="#1F1F1F" stroke="#3A3A3A" stroke-width="2"/>
+  <rect x="160" y="372" width="320" height="168" rx="84" fill="#1F1F1F" stroke="#3A3A3A" stroke-width="2"/>
+  <path d="M220 260C238 234 266 218 296 218C326 218 354 234 372 260" stroke="#6B6B6B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M256 288C268 296 282 300 296 300C310 300 324 296 336 288" stroke="#8F8F8F" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="288" cy="250" r="8" fill="#9A9A9A"/>
+  <circle cx="352" cy="250" r="8" fill="#9A9A9A"/>
+  <text x="320" y="560" text-anchor="middle" fill="#6B6B6B" font-family="Arial, Helvetica, sans-serif" font-size="18">Profile</text>
+</svg>
