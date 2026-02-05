@@ -135,9 +135,9 @@ export const content: Record<Language, ContentBundle> = {
     contactButton: "Contact",
     hero: {
       location: "Makassar, Indonesia",
-      headline: "I'm Hesdin, Web Developer",
+      headline: "I'm Hesdin Mukhsin, Web Developer",
       description:
-        "I specialize in crafting modern, high-performing websites that help brands stand out and convert visitors into loyal clients.",
+        "I craft modern, high-performing websites that help brands stand out and turn visitors into loyal clients.",
       ctaPrimary: "Hire Me",
       ctaSecondary: "See My Works",
       techLabel: "Technologies I use",
@@ -146,31 +146,31 @@ export const content: Record<Language, ContentBundle> = {
     services: {
       title: "My Services",
       description:
-        "Explore my range of services designed to elevate your digital presence with elegant, performant experiences.",
+        "A suite of services to strengthen your digital presence with elegant, high-performing experiences.",
       cta: "Learn More",
       items: [
         {
           title: "Front-End Dev",
           description:
-            "Bringing designs to life with clean, efficient, and optimized code. I build responsive, interactive web applications using the latest front-end technologies like React.",
+            "Bringing designs to life with clean, efficient code. I build responsive, interactive interfaces with modern front-end stacks like React.",
           icon: "frontend",
         },
         {
           title: "Back-End Dev",
           description:
-            "I develop robust server-side applications that power dynamic and data-driven websites. From API creation to database management, I ensure your web apps run smoothly.",
+            "Building reliable server-side systems for dynamic, data-driven products. From API design to database management, everything runs smoothly.",
           icon: "backend",
         },
         {
           title: "UI/UX Design",
           description:
-            "I design intuitive and visually compelling user interfaces that enhance engagement. My approach focuses on user behavior, accessibility, and aesthetics.",
+            "Designing intuitive, visually strong interfaces focused on user behavior, accessibility, and clarity.",
           icon: "design",
         },
         {
           title: "Performance Optimization",
           description:
-            "Slow websites lose visitors. I enhance website performance with code optimization, caching strategies, and SEO improvements for fast load times.",
+            "Improving speed with code optimization, caching, and SEO so pages load fast and stay smooth.",
           icon: "performance",
         },
       ],
@@ -182,7 +182,7 @@ export const content: Record<Language, ContentBundle> = {
         {
           title: "MSCSC",
           description:
-            "A vibrant ReactJS website for MSCSC, celebrating science, math, and space exploration. The platform features engaging events and interactive content.",
+            "A vibrant ReactJS site for MSCSC, highlighting science, math, and space exploration with events and interactive content.",
           image: "/images/projects/project-1.svg",
           link: "#",
           tags: ["ReactJS", "Design", "CMS"],
@@ -219,19 +219,19 @@ export const content: Record<Language, ContentBundle> = {
         {
           title: "Checkout",
           description:
-            "Checkout page designed for Astro Mart with a clean and premium e-commerce experience.",
+            "Checkout flow for Astro Mart with a clean, premium e-commerce experience.",
           image: "/images/gallery/gallery-1.svg",
         },
         {
           title: "Admin Panel",
           description:
-            "Admin Panel, The MSCSC Admin Panel streamlines management with simple controls.",
+            "MSCSC Admin Panel to streamline updates with simple, clear controls.",
           image: "/images/gallery/gallery-2.svg",
         },
         {
           title: "Science Tech Club",
           description:
-            "MSCSC club landing experience with clean hero and content system.",
+            "MSCSC club landing page with a clean hero and structured content.",
           image: "/images/gallery/gallery-3.svg",
         },
         {
@@ -250,10 +250,10 @@ export const content: Record<Language, ContentBundle> = {
     },
     about: {
       title: "I build calm, modern experiences",
-      subtitle: "Full-stack developer helping brands build beautiful, performant websites.",
+      subtitle: "Full-stack developer helping brands build beautiful, high-performing websites.",
       paragraphs: [
-        "I've spent the last several years collaborating with founders, agencies, and growing teams to design and ship digital experiences that are fast, accessible, and conversion focused.",
-        "My workflow blends product strategy, thoughtful design, and clean engineering - ensuring every site feels premium while remaining easy to maintain.",
+        "I've spent the last few years collaborating with founders, agencies, and teams to design and ship fast, accessible, conversion-focused experiences.",
+        "My workflow blends product strategy, thoughtful design, and clean engineering so every site feels premium yet easy to maintain.",
       ],
       ctaPrimary: "Download Resume",
       ctaSecondary: "Hire Me",
@@ -265,7 +265,7 @@ export const content: Record<Language, ContentBundle> = {
         {
           question: "Who are you, and what do you do?",
           answer:
-            "I am Hesdin, a freelance full-stack web developer focused on building modern, high-performing digital experiences.",
+            "I'm Hesdin, a freelance full-stack web developer focused on modern, high-performing digital experiences.",
         },
         {
           question: "What services do you provide?",
@@ -290,7 +290,7 @@ export const content: Record<Language, ContentBundle> = {
         {
           question: "How can I collaborate with you?",
           answer:
-            "Send the project details through the contact form, and I will reply with scope, timeline, and next steps.",
+            "Share your project details via the contact form, and I'll reply with scope, timeline, and next steps.",
         },
       ],
     },
@@ -298,7 +298,7 @@ export const content: Record<Language, ContentBundle> = {
       label: "Contact me",
       title: "Get in touch",
       description:
-        "It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you.",
+        "It's important to stay connected, so I'm always ready to answer any questions you have.",
       form: {
         fullName: "Full name",
         email: "Email address",
@@ -313,7 +313,7 @@ export const content: Record<Language, ContentBundle> = {
     footer: {
       brand: "Hesdin",
       description:
-        "I'm a web developer with 3+ years of experience in front-end, back-end, and UI/UX design, creating modern, functional websites to help businesses grow.",
+        "Web developer with 3+ years of experience in front-end, back-end, and UI/UX design, helping businesses grow through modern, functional websites.",
       resumeCta: "My Resume",
       contactTitle: "Contact me",
       menuTitle: "Menu",
@@ -333,9 +333,9 @@ export const content: Record<Language, ContentBundle> = {
     contactButton: "Contact",
     hero: {
       location: "Makassar, Indonesia",
-      headline: "I'm Hesdin, Web Developer",
+      headline: "I'm Hesdin Mukhsin, Web Developer",
       description:
-        "Saya membantu brand membangun website modern dan berperforma tinggi agar tampil menonjol dan mengubah pengunjung menjadi klien.",
+        "Saya membantu brand membangun website modern dan berperforma tinggi agar tampil menonjol serta mengubah pengunjung menjadi klien.",
       ctaPrimary: "Hire Me",
       ctaSecondary: "See My Works",
       techLabel: "Technologies yang saya gunakan",
@@ -344,7 +344,7 @@ export const content: Record<Language, ContentBundle> = {
     services: {
       title: "Layanan Saya",
       description:
-        "Rangkaian layanan untuk memperkuat kehadiran digital Anda dengan pengalaman yang elegan dan performa tinggi.",
+        "Rangkaian layanan untuk memperkuat kehadiran digital Anda dengan pengalaman yang elegan dan berperforma tinggi.",
       cta: "Learn More",
       items: [
         {
@@ -362,7 +362,7 @@ export const content: Record<Language, ContentBundle> = {
         {
           title: "UI/UX Design",
           description:
-            "Merancang UI/UX yang intuitif, fokus pada behavior pengguna, aksesibilitas, dan estetika yang modern.",
+            "Merancang UI/UX yang intuitif dengan fokus pada behavior pengguna, aksesibilitas, dan estetika modern.",
           icon: "design",
         },
         {
@@ -374,13 +374,13 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     projects: {
-      title: "Projects yang Saya Buat untuk Clients",
+      title: "Projects yang Saya Kerjakan untuk Clients",
       featuredCta: "Learn more →",
       items: [
         {
           title: "MSCSC",
           description:
-            "Website ReactJS untuk komunitas sains yang menampilkan event, profil member, dan konten interaktif.",
+            "Website ReactJS untuk komunitas sains dengan event, profil member, dan konten interaktif.",
           image: "/images/projects/project-1.svg",
           link: "#",
           tags: ["ReactJS", "Design", "CMS"],
@@ -448,7 +448,7 @@ export const content: Record<Language, ContentBundle> = {
     },
     about: {
       title: "I build calm, modern experiences",
-      subtitle: "Full-stack developer untuk brand yang ingin tampil modern.",
+      subtitle: "Full-stack developer untuk brand yang ingin tampil modern dan profesional.",
       paragraphs: [
         "Saya bekerja sama dengan founder, agency, dan team untuk membangun pengalaman digital yang cepat dan accessible.",
         "Workflow saya menggabungkan strategi produk, design yang matang, dan engineering yang bersih.",
@@ -496,7 +496,7 @@ export const content: Record<Language, ContentBundle> = {
       label: "Contact me",
       title: "Get in touch",
       description:
-        "Penting bagi kita untuk selalu terhubung, jadi saya siap menjawab pertanyaan apa pun dari Anda.",
+        "Penting bagi kita untuk tetap terhubung, jadi saya selalu siap menjawab pertanyaan Anda.",
       form: {
         fullName: "Nama lengkap",
         email: "Alamat email",
@@ -511,7 +511,7 @@ export const content: Record<Language, ContentBundle> = {
     footer: {
       brand: "Hesdin",
       description:
-        "Saya web developer dengan 3+ tahun pengalaman di front-end, back-end, dan UI/UX design untuk membantu bisnis berkembang.",
+        "Saya web developer dengan 3+ tahun pengalaman di front-end, back-end, dan UI/UX design untuk membantu bisnis berkembang lewat website modern dan fungsional.",
       resumeCta: "My Resume",
       contactTitle: "Contact me",
       menuTitle: "Menu",

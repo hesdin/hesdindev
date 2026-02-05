@@ -5,6 +5,9 @@ import { useLanguage } from "../ui/LanguageProvider";
 
 export default function Hero() {
   const { t } = useLanguage();
+  const headlineParts = t.hero.headline.split(",");
+  const headlineFirst = headlineParts[0];
+  const headlineSecond = headlineParts.slice(1).join(",").trim();
 
   return (
     <section id="home" className="relative overflow-hidden pb-24 pt-20">
@@ -30,7 +33,15 @@ export default function Hero() {
             <span>{t.hero.location}</span>
           </div>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-[color:var(--text)] sm:text-5xl lg:text-6xl">
-            {t.hero.headline}
+            {headlineSecond ? (
+              <>
+                {headlineFirst},
+                <br />
+                {headlineSecond}
+              </>
+            ) : (
+              t.hero.headline
+            )}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-[color:var(--text-muted)] sm:text-lg">
             {t.hero.description}
@@ -58,8 +69,8 @@ export default function Hero() {
               {t.hero.techLabel}
             </p>
             <div className="edge-fade mt-6">
-              <div className="flex w-full justify-center overflow-hidden">
-                <div className="flex w-max items-center gap-3 px-6">
+              <div className="flex w-full justify-start overflow-x-auto px-2 sm:justify-center sm:overflow-visible">
+                <div className="flex w-max items-center gap-3 px-4 sm:px-0">
                   {t.techStack.map((tech) => (
                     <span
                       key={tech.name}

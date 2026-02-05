@@ -38,19 +38,20 @@ export default function Navbar() {
             {t.contactButton}
           </Button>
         </div>
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-3 md:hidden">
+          <LanguageToggle />
+          <ThemeToggle />
           <button
             type="button"
             onClick={() => setIsOpen((prev) => !prev)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-[color:var(--border-soft)] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
+            className="inline-flex h-10 w-10 items-center justify-center text-[color:var(--text-muted)] transition hover:text-[color:var(--text)]"
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
             <span className="sr-only">Toggle menu</span>
-            <div className="space-y-1">
-              <span className="block h-0.5 w-5 bg-current" />
-              <span className="block h-0.5 w-5 bg-current" />
-              <span className="block h-0.5 w-5 bg-current" />
+            <div className="space-y-2">
+              <span className="block h-0.5 w-6 bg-current" />
+              <span className="block h-0.5 w-6 bg-current" />
             </div>
           </button>
         </div>
@@ -66,10 +67,7 @@ export default function Navbar() {
               {t.contactButton}
             </Link>
           </div>
-          <div className="mb-6 flex items-center justify-between gap-3">
-            <LanguageToggle />
-            <ThemeToggle />
-          </div>
+          <div className="mb-6 flex items-center justify-between gap-3" />
           <nav className="flex flex-col gap-4 text-sm text-[color:var(--text-muted)]">
             {t.navLinks.map((link) => (
               <Link

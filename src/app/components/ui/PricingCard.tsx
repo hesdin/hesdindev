@@ -25,7 +25,7 @@ export default function PricingCard({ packageData }: PricingCardProps) {
         <h3 className="text-xl font-semibold text-[color:var(--text)]">
           {name}
         </h3>
-        <p className="text-2xl font-semibold text-[color:var(--text)]">
+        <p className="text-xl font-semibold text-[color:var(--text)] sm:text-2xl">
           {price}
         </p>
       </div>
