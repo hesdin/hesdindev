@@ -135,7 +135,7 @@ export const content: Record<Language, ContentBundle> = {
     contactButton: "Contact",
     hero: {
       location: "Makassar, Indonesia",
-      headline: "I'm Hesdin Mukhsin, Web Developer",
+      headline: "I'm Hesdin, Web Developer",
       description:
         "I craft modern, high-performing websites that help brands stand out and turn visitors into loyal clients.",
       ctaPrimary: "Hire Me",
@@ -333,7 +333,7 @@ export const content: Record<Language, ContentBundle> = {
     contactButton: "Contact",
     hero: {
       location: "Makassar, Indonesia",
-      headline: "I'm Hesdin Mukhsin, Web Developer",
+      headline: "I'm Hesdin, Web Developer",
       description:
         "Saya membantu brand membangun website modern dan berperforma tinggi agar tampil menonjol serta mengubah pengunjung menjadi klien.",
       ctaPrimary: "Hire Me",
