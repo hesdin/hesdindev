@@ -15,7 +15,7 @@ export default function About() {
           <div className="absolute -inset-4 rounded-2xl border border-[color:var(--border)]" />
           <div className="relative rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-4">
             <Image
-              src="/images/profile.svg"
+              src="/images/hesdin-img.png"
               alt="Hesdin portrait"
               width={640}
               height={640}

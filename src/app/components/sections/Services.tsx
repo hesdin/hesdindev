@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import Button from "../ui/Button";
 import SectionTitle from "../ui/SectionTitle";
 import { useLanguage } from "../ui/LanguageProvider";
@@ -39,6 +41,11 @@ const icons = {
 
 export default function Services() {
   const { t } = useLanguage();
+  const [expandedServices, setExpandedServices] = useState<Record<string, boolean>>({});
+
+  const handleReveal = (title: string) => {
+    setExpandedServices((prev) => ({ ...prev, [title]: true }));
+  };
 
   return (
     <section id="services" className="py-20">
@@ -69,9 +76,32 @@ export default function Services() {
                 <h3 className="text-lg font-semibold text-[color:var(--text)]">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
-                  {service.description}
-                </p>
+                {service.revealLabel ? (
+                  <>
+                    {service.teaser ? (
+                      <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
+                        {service.teaser}
+                      </p>
+                    ) : null}
+                    {expandedServices[service.title] ? (
+                      <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
+                        {service.description}
+                      </p>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => handleReveal(service.title)}
+                        className="mt-3 text-sm font-semibold text-[color:var(--primary)] transition hover:opacity-80"
+                      >
+                        {service.revealLabel}
+                      </button>
+                    )}
+                  </>
+                ) : (
+                  <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
+                    {service.description}
+                  </p>
+                )}
               </div>
             </div>
           ))}

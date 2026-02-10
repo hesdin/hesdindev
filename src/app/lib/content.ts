@@ -95,17 +95,17 @@ type ContentBundle = {
 
 const techStack: TechItem[] = [
   { name: "JavaScript" },
-  { name: "Reactjs" },
-  { name: "Node" },
-  { name: "Express" },
-  { name: "Bootstrap" },
-  { name: "jQuery" },
+  { name: "Laravel" },
+  { name: "Tailwind CSS" },
+  { name: "Alpine.js" },
+  { name: "Livewire" },
+  { name: "Vue.js" },
+  { name: "Flutter" },
   { name: "PHP" },
   { name: "MySQL" },
-  { name: "MongoDB" },
+  { name: "PostgreSQL" },
   { name: "Git" },
   { name: "GitHub" },
-  { name: "Figma" },
   { name: "WordPress" },
 ];
 
@@ -135,48 +135,50 @@ export const content: Record<Language, ContentBundle> = {
     contactButton: "Contact",
     hero: {
       location: "Makassar, Indonesia",
-      headline: "I'm Hesdin, Web Developer",
+      headline: "I'm Hesdin, Freelance Web App Developer",
       description:
-        "I craft modern, high-performing websites that help brands stand out and turn visitors into loyal clients.",
-      ctaPrimary: "Hire Me",
-      ctaSecondary: "See My Works",
+        "Technical partner for corporations, business owners, and SMEs in building web apps and digital systems that are secure, reliable, and ready to scale.",
+      ctaPrimary: "Start a Project",
+      ctaSecondary: "See My Work",
       techLabel: "Technologies I use",
     },
     techStack,
     services: {
-      title: "My Services",
+      title: "Services Offered",
       description:
-        "A suite of services to strengthen your digital presence with elegant, high-performing experiences.",
+        "Custom technology solutions for corporations, businesses, and SMEs. From startup scale to enterprise.",
       cta: "Learn More",
       items: [
         {
-          title: "Front-End Dev",
+          title: "Custom System Development",
           description:
-            "Bringing designs to life with clean, efficient code. I build responsive, interactive interfaces with modern front-end stacks like React.",
+            "Transform business processes into digital operations with precise solutions. Built from scratch and fully tailored to your workflows.",
           icon: "frontend",
         },
         {
-          title: "Back-End Dev",
+          title: "Backend Development",
           description:
-            "Building reliable server-side systems for dynamic, data-driven products. From API design to database management, everything runs smoothly.",
+            "Building a strong, fast digital foundation with APIs, integrations, and database optimization so systems stay stable and ready to grow.",
           icon: "backend",
         },
         {
-          title: "UI/UX Design",
+          title: "Mobile App Development",
+          teaser: "Need a mobile app?",
+          revealLabel: "Check here",
           description:
-            "Designing intuitive, visually strong interfaces focused on user behavior, accessibility, and clarity.",
+            "One codebase for iOS and Android with Flutter. Smooth UX, stable performance, and easy to extend.",
           icon: "design",
         },
         {
-          title: "Performance Optimization",
+          title: "Technology Consulting",
           description:
-            "Improving speed with code optimization, caching, and SEO so pages load fast and stay smooth.",
+            "System audits, architecture planning, and tech-stack advice so technical decisions stay on track.",
           icon: "performance",
         },
       ],
     },
     projects: {
-      title: "Projects I've Created for Clients",
+      title: "Reliable Digital Systems",
       featuredCta: "Learn more →",
       items: [
         {
@@ -212,7 +214,7 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     gallery: {
-      title: "Creative Designs Made for Clients",
+      title: "Design Explorations for Clients",
       counter: "1/5",
       cta: "Learn more →",
       items: [
@@ -249,48 +251,48 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     about: {
-      title: "I build calm, modern experiences",
-      subtitle: "Full-stack developer helping brands build beautiful, high-performing websites.",
+      title: "My Experience",
+      subtitle: "My journey started in 2022.",
       paragraphs: [
-        "I've spent the last few years collaborating with founders, agencies, and teams to design and ship fast, accessible, conversion-focused experiences.",
-        "My workflow blends product strategy, thoughtful design, and clean engineering so every site feels premium yet easy to maintain.",
+        "Since 2022, experience handling enterprise systems has shaped the quality standards and engineering professionalism upheld to this day.",
+        "Working remotely and collaboratively with client teams to ensure solutions are secure, easy to maintain, and ready to scale.",
       ],
       ctaPrimary: "Download Resume",
-      ctaSecondary: "Hire Me",
+      ctaSecondary: "Contact Me",
     },
     faq: {
       title: "Frequently Asked Questions",
-      subtitle: "Answers to the most common questions about working together.",
+      subtitle: "Quick answers to common questions about working together.",
       items: [
         {
           question: "Who are you, and what do you do?",
           answer:
-            "I'm Hesdin, a freelance full-stack web developer focused on modern, high-performing digital experiences.",
+            "I'm Hesdin, a freelance web app developer helping businesses build secure, scalable digital systems.",
         },
         {
           question: "What services do you provide?",
           answer:
-            "Front-end and back-end development, UI/UX design, performance optimization, and ongoing product support.",
+            "Custom system development, backend, mobile apps with Flutter, and technology consulting.",
         },
         {
           question: "What technologies do you work with?",
           answer:
-            "React, Next.js, TypeScript, Node, SQL databases, and modern design systems like Tailwind CSS.",
+            "Laravel, TALL Stack (Tailwind, Alpine, Livewire), Vue.js, Flutter, PostgreSQL/MySQL, and modern tooling.",
         },
         {
           question: "How do you approach a new project?",
           answer:
-            "I start with research and discovery, align on goals, design the system, and build in short, clear milestones.",
+            "I start with discovery and goal alignment, then system design and staged delivery with clear updates.",
         },
         {
-          question: "Can you redesign an existing website?",
+          question: "Can you integrate or modernize an existing system?",
           answer:
-            "Yes. I can refresh the UI, improve performance, and preserve brand equity while upgrading the codebase.",
+            "Yes. I can integrate legacy systems, improve performance, and modernize the architecture without disrupting operations.",
         },
         {
           question: "How can I collaborate with you?",
           answer:
-            "Share your project details via the contact form, and I'll reply with scope, timeline, and next steps.",
+            "Share your needs via the contact form and I'll reply with scope, timeline, and next steps.",
         },
       ],
     },
@@ -298,7 +300,7 @@ export const content: Record<Language, ContentBundle> = {
       label: "Contact me",
       title: "Get in touch",
       description:
-        "It's important to stay connected, so I'm always ready to answer any questions you have.",
+        "Tell me about your needs, and I'll respond with scope, timeline, and next steps.",
       form: {
         fullName: "Full name",
         email: "Email address",
@@ -313,7 +315,7 @@ export const content: Record<Language, ContentBundle> = {
     footer: {
       brand: "Hesdin",
       description:
-        "Web developer with 3+ years of experience in front-end, back-end, and UI/UX design, helping businesses grow through modern, functional websites.",
+        "Freelance web app developer helping businesses build secure, scalable digital systems.",
       resumeCta: "My Resume",
       contactTitle: "Contact me",
       menuTitle: "Menu",
@@ -324,58 +326,61 @@ export const content: Record<Language, ContentBundle> = {
   id: {
     navLinks: [
       { label: "Beranda", href: "#home" },
-      { label: "Services", href: "#services" },
-      { label: "Projects", href: "#projects" },
-      { label: "Designs", href: "#gallery" },
+      { label: "Layanan", href: "#services" },
+      { label: "Proyek", href: "#projects" },
+      { label: "Desain", href: "#gallery" },
       { label: "Tentang", href: "#about" },
       { label: "FAQ", href: "#faq" },
     ],
-    contactButton: "Contact",
+    contactButton: "Hubungi",
     hero: {
       location: "Makassar, Indonesia",
-      headline: "I'm Hesdin, Web Developer",
+      headline: "Saya Hesdin, Freelance Web App Developer",
       description:
-        "Saya membantu brand membangun website modern dan berperforma tinggi agar tampil menonjol serta mengubah pengunjung menjadi klien.",
-      ctaPrimary: "Hire Me",
-      ctaSecondary: "See My Works",
-      techLabel: "Technologies yang saya gunakan",
+        "Partner teknis untuk korporasi, pemilik bisnis, dan UMKM dalam membangun web app serta sistem digital yang aman, andal, dan siap skala besar.",
+      ctaPrimary: "Mulai Proyek",
+      ctaSecondary: "Lihat Karya",
+      techLabel: "Teknologi yang saya gunakan",
     },
     techStack,
     services: {
-      title: "Layanan Saya",
+      title: "Layanan yang Ditawarkan",
       description:
-        "Rangkaian layanan untuk memperkuat kehadiran digital Anda dengan pengalaman yang elegan dan berperforma tinggi.",
-      cta: "Learn More",
+        "Solusi teknologi kustom untuk korporasi, bisnis, dan UMKM. Dari skala startup hingga enterprise.",
+      cta: "Pelajari",
       items: [
         {
-          title: "Front-End Dev",
+          title: "Pengembangan Sistem Kustom",
           description:
-            "Mengubah desain menjadi pengalaman interaktif dengan code yang rapi dan efisien. Menggunakan React dan teknologi front-end modern.",
+            "Transformasi proses bisnis ke ranah digital melalui solusi yang presisi. Sistem dibangun dari nol dan disesuaikan sepenuhnya dengan alur kerja bisnis.",
           icon: "frontend",
         },
         {
-          title: "Back-End Dev",
+          title: "Backend Development",
           description:
-            "Membangun aplikasi server-side yang stabil dan aman, mulai dari API sampai pengelolaan database agar web app berjalan mulus.",
+            "Membangun fondasi digital yang kokoh dan cepat, dengan API, integrasi, serta optimasi database agar sistem tetap stabil dan siap berkembang.",
           icon: "backend",
         },
         {
-          title: "UI/UX Design",
+          title: "Mobile App Development",
+          teaser: "Butuh Mobile App?",
+          revealLabel: "Cek di sini",
           description:
-            "Merancang UI/UX yang intuitif dengan fokus pada behavior pengguna, aksesibilitas, dan estetika modern.",
+            "Satu codebase untuk iOS dan Android dengan Flutter. UX mulus, performa stabil, dan mudah dikembangkan.",
           icon: "design",
         },
+
         {
-          title: "Performance Optimization",
+          title: "Konsultasi Teknologi",
           description:
-            "Optimasi performa website dengan strategi caching, perbaikan Core Web Vitals, dan peningkatan SEO.",
+            "Audit sistem, perencanaan arsitektur, dan advis tech stack agar keputusan teknis tetap tepat.",
           icon: "performance",
         },
       ],
     },
     projects: {
-      title: "Projects yang Saya Kerjakan untuk Clients",
-      featuredCta: "Learn more →",
+      title: "Sistem Digital yang Andal",
+      featuredCta: "Pelajari →",
       items: [
         {
           title: "MSCSC",
@@ -410,9 +415,9 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     gallery: {
-      title: "Creative Designs Made for Clients",
+      title: "Eksplorasi Desain untuk Klien",
       counter: "1/5",
-      cta: "Learn more →",
+      cta: "Pelajari →",
       items: [
         {
           title: "Checkout",
@@ -447,63 +452,63 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     about: {
-      title: "I build calm, modern experiences",
-      subtitle: "Full-stack developer untuk brand yang ingin tampil modern dan profesional.",
+      title: "Pengalaman yang Saya Miliki",
+      subtitle: "Perjalanan saya dimulai sejak 2022.",
       paragraphs: [
-        "Saya bekerja sama dengan founder, agency, dan team untuk membangun pengalaman digital yang cepat dan accessible.",
-        "Workflow saya menggabungkan strategi produk, design yang matang, dan engineering yang bersih.",
+        "Sejak 2022, pengalaman menangani sistem enterprise membentuk standar kualitas dan profesionalisme engineering yang dijaga hingga saat ini.",
+        "Bekerja secara remote dan kolaboratif bersama tim klien untuk memastikan solusi yang dibangun aman, mudah dirawat, dan siap dikembangkan.",
       ],
-      ctaPrimary: "Download Resume",
-      ctaSecondary: "Hire Me",
+      ctaPrimary: "Unduh Resume",
+      ctaSecondary: "Hubungi Saya",
     },
     faq: {
-      title: "Frequently Asked Questions",
-      subtitle: "Jawaban singkat untuk pertanyaan yang sering muncul.",
+      title: "Pertanyaan yang Sering Ditanyakan",
+      subtitle: "Jawaban singkat seputar cara kerja dan layanan.",
       items: [
         {
           question: "Siapa kamu dan apa yang kamu kerjakan?",
           answer:
-            "Saya Hesdin, freelance full-stack web developer yang fokus membangun experience digital modern.",
+            "Saya Hesdin, freelance web app developer yang membantu bisnis membangun sistem digital yang aman dan scalable.",
         },
         {
           question: "Layanan apa yang kamu berikan?",
           answer:
-            "Front-end, back-end, UI/UX design, performance optimization, dan support produk.",
+            "Pengembangan sistem kustom, backend, mobile app dengan Flutter, dan konsultasi teknologi.",
         },
         {
           question: "Teknologi apa yang kamu gunakan?",
           answer:
-            "React, Next.js, TypeScript, Node, SQL database, dan design system modern seperti Tailwind CSS.",
+            "Laravel, TALL Stack (Tailwind, Alpine, Livewire), Vue.js, Flutter, PostgreSQL/MySQL, dan tools modern.",
         },
         {
           question: "Bagaimana proses kamu memulai project?",
           answer:
-            "Saya mulai dari riset, menyamakan tujuan, lalu desain sistem dan build dengan milestone yang jelas.",
+            "Mulai dari discovery dan penyamaan tujuan, lalu desain sistem dan delivery bertahap dengan update yang jelas.",
         },
         {
-          question: "Bisa redesign website yang sudah ada?",
+          question: "Bisa integrasi atau modernisasi sistem yang sudah ada?",
           answer:
-            "Bisa. Saya bisa refresh UI, meningkatkan performa, dan tetap menjaga brand equity.",
+            "Bisa. Saya dapat mengintegrasikan sistem lama, meningkatkan performa, dan merapikan arsitektur tanpa mengganggu operasional.",
         },
         {
           question: "Bagaimana cara kerja sama dengan kamu?",
           answer:
-            "Kirim detail project lewat form, lalu saya balas dengan scope, timeline, dan langkah berikutnya.",
+            "Kirim detail project lewat form kontak, lalu saya balas dengan scope, timeline, dan langkah berikutnya.",
         },
       ],
     },
     contact: {
-      label: "Contact me",
-      title: "Get in touch",
+      label: "Hubungi saya",
+      title: "Mari terhubung",
       description:
-        "Penting bagi kita untuk tetap terhubung, jadi saya selalu siap menjawab pertanyaan Anda.",
+        "Ceritakan kebutuhan Anda, saya akan balas dengan scope, timeline, dan langkah berikutnya.",
       form: {
         fullName: "Nama lengkap",
         email: "Alamat email",
         phone: "Nomor telepon",
         subject: "Subjek",
         message: "Tulis pesan Anda di sini",
-        cta: "Send Message",
+        cta: "Kirim Pesan",
       },
     },
     socialLinks,
@@ -511,9 +516,9 @@ export const content: Record<Language, ContentBundle> = {
     footer: {
       brand: "Hesdin",
       description:
-        "Saya web developer dengan 3+ tahun pengalaman di front-end, back-end, dan UI/UX design untuk membantu bisnis berkembang lewat website modern dan fungsional.",
-      resumeCta: "My Resume",
-      contactTitle: "Contact me",
+        "Freelance web app developer yang membantu bisnis membangun sistem digital yang aman dan siap skala.",
+      resumeCta: "Resume Saya",
+      contactTitle: "Hubungi saya",
       menuTitle: "Menu",
       copyright:
         "Copyright © 2026 Hesdin - All rights reserved || Designed By: Hesdin",

@@ -10,6 +10,8 @@ export type TechItem = {
 export type Service = {
   title: string;
   description: string;
+  teaser?: string;
+  revealLabel?: string;
   icon: "frontend" | "backend" | "design" | "performance";
 };
 
