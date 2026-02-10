@@ -4,7 +4,37 @@ import SocialIcon from "../ui/SocialIcon";
 import { useLanguage } from "../ui/LanguageProvider";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const payload = {
+      name: String(formData.get("name") ?? "").trim(),
+      email: String(formData.get("email") ?? "").trim(),
+      phone: String(formData.get("phone") ?? "").trim(),
+      subject: String(formData.get("subject") ?? "").trim(),
+      message: String(formData.get("message") ?? "").trim(),
+    };
+
+    const lineBreak = language === "id" ? "\n" : "\n";
+    const text = [
+      `${t.contact.form.fullName}: ${payload.name}`,
+      `${t.contact.form.email}: ${payload.email}`,
+      payload.phone ? `${t.contact.form.phone}: ${payload.phone}` : "",
+      payload.subject ? `${t.contact.form.subject}: ${payload.subject}` : "",
+      `${t.contact.form.message}: ${payload.message}`,
+    ]
+      .filter(Boolean)
+      .join(lineBreak);
+
+    const phoneNumber = "6285398737159";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      text
+    )}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section id="contact" className="py-20">
@@ -25,15 +55,17 @@ export default function Contact() {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--border)] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center text-[color:var(--text-muted)] transition hover:text-[color:var(--text)]"
                   aria-label={social.name}
                 >
-                  <SocialIcon icon={social.icon} />
+                  <SocialIcon icon={social.icon} className="h-6 w-6" />
                 </a>
               ))}
             </div>
           </div>
-          <form className="space-y-8">
+          <form className="space-y-8" onSubmit={handleSubmit}>
             <div className="grid gap-8 md:grid-cols-2">
               <label className="space-y-2 text-sm font-medium text-[color:var(--text-muted)]">
                 {t.contact.form.fullName}
@@ -41,6 +73,7 @@ export default function Contact() {
                   type="text"
                   name="name"
                   placeholder=""
+                  required
                   className="w-full border-b border-[color:var(--border)] bg-transparent pb-2 text-sm text-[color:var(--text)] focus:border-[color:var(--border-strong)] focus:outline-none"
                 />
               </label>
@@ -50,6 +83,7 @@ export default function Contact() {
                   type="email"
                   name="email"
                   placeholder=""
+                  required
                   className="w-full border-b border-[color:var(--border)] bg-transparent pb-2 text-sm text-[color:var(--text)] focus:border-[color:var(--border-strong)] focus:outline-none"
                 />
               </label>
@@ -77,6 +111,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 rows={4}
+                required
                 className="w-full border-b border-[color:var(--border)] bg-transparent pb-2 text-sm text-[color:var(--text)] focus:border-[color:var(--border-strong)] focus:outline-none"
               />
             </label>

@@ -83,6 +83,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
+
   section {
     @apply scroll-mt-24;
   }
@@ -91,6 +92,31 @@
 @layer utilities {
   .fade-in {
     animation: fade-in 0.8s ease-out both;
+  }
+
+  .cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 999px;
+    background: #0f0f12;
+    transform: translate3d(var(--x, 0), var(--y, 0), 0) translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 60;
+  }
+
+  [data-theme="dark"] .cursor-dot {
+    display: none;
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    .cursor-dot {
+      display: none;
+    }
   }
 
   .edge-fade {

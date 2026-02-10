@@ -29,10 +29,12 @@ export default function Footer() {
                 <Link
                   key={social.name}
                   href={social.href}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[color:var(--border)] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center text-[color:var(--text-muted)] transition hover:text-[color:var(--text)]"
                   aria-label={social.name}
                 >
-                  <SocialIcon icon={social.icon} />
+                  <SocialIcon icon={social.icon} className="h-6 w-6" />
                 </Link>
               ))}
             </div>

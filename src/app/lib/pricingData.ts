@@ -54,7 +54,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Waktu pengerjaan: 5-7 hari",
         revisions: "Revisi: 7x",
         ctaLabel: "Konsultasi Sekarang",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Professional Website",
@@ -74,7 +74,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Waktu pengerjaan: 10-14 hari",
         revisions: "Revisi: 10x",
         ctaLabel: "Konsultasi Sekarang",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Premium Website",
@@ -93,7 +93,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Waktu pengerjaan: 3-5 minggu",
         revisions: "Revisi: Unlimited (selama scope tetap)",
         ctaLabel: "Konsultasi Sekarang",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Basic Mobile App",
@@ -109,7 +109,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Waktu pengerjaan: 3-5 minggu",
         revisions: "Revisi: 6x",
         ctaLabel: "Konsultasi Sekarang",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Professional Mobile App",
@@ -127,7 +127,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Waktu pengerjaan: 6-8 minggu",
         revisions: "Revisi: 10x",
         ctaLabel: "Konsultasi Sekarang",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Premium Mobile App",
@@ -143,7 +143,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Waktu pengerjaan: 8-12 minggu",
         revisions: "Revisi: Unlimited (selama scope tetap)",
         ctaLabel: "Konsultasi Sekarang",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
     ],
     addons: [
@@ -179,7 +179,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Timeline: 5-7 days",
         revisions: "Revisions: 7x",
         ctaLabel: "Consult Now",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Professional Website",
@@ -199,7 +199,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Timeline: 10-14 days",
         revisions: "Revisions: 10x",
         ctaLabel: "Consult Now",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Premium Website",
@@ -218,7 +218,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Timeline: 3-5 weeks",
         revisions: "Revisions: Unlimited (within scope)",
         ctaLabel: "Consult Now",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Basic Mobile App",
@@ -234,7 +234,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Timeline: 3-5 weeks",
         revisions: "Revisions: 6x",
         ctaLabel: "Consult Now",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Professional Mobile App",
@@ -252,7 +252,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Timeline: 6-8 weeks",
         revisions: "Revisions: 10x",
         ctaLabel: "Consult Now",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
       {
         name: "Premium Mobile App",
@@ -268,7 +268,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
         duration: "Timeline: 8-12 weeks",
         revisions: "Revisions: Unlimited (within scope)",
         ctaLabel: "Consult Now",
-        ctaHref: "https://wa.me/628XXXXXXXXXX",
+        ctaHref: "https://wa.me/6285398737159",
       },
     ],
     addons: [

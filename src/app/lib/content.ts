@@ -111,9 +111,13 @@ const techStack: TechItem[] = [
 
 const socialLinks: SocialLink[] = [
   { name: "Dribbble", href: "#", icon: "dribbble" },
-  { name: "GitHub", href: "#", icon: "github" },
-  { name: "LinkedIn", href: "#", icon: "linkedin" },
-  { name: "Twitter", href: "#", icon: "twitter" },
+  { name: "GitHub", href: "https://github.com/hesdin/kurir-servis.git", icon: "github" },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/hesdin-mukhsin/",
+    icon: "linkedin",
+  },
+  { name: "Twitter", href: "https://x.com/edinmukhsin", icon: "twitter" },
 ];
 
 const contactDetails: ContactInfo[] = [
@@ -163,8 +167,6 @@ export const content: Record<Language, ContentBundle> = {
         },
         {
           title: "Mobile App Development",
-          teaser: "Need a mobile app?",
-          revealLabel: "Check here",
           description:
             "One codebase for iOS and Android with Flutter. Smooth UX, stable performance, and easy to extend.",
           icon: "design",
@@ -182,34 +184,45 @@ export const content: Record<Language, ContentBundle> = {
       featuredCta: "Learn more →",
       items: [
         {
-          title: "MSCSC",
+          title: "WZCRM Memberships",
           description:
-            "A vibrant ReactJS site for MSCSC, highlighting science, math, and space exploration with events and interactive content.",
+            "Nationwide Restaurant CRM & Ordering. WZCRM is an integrated loyalty platform connecting dozens of restaurant branches into one ordering ecosystem with a strong membership program.",
           image: "/images/projects/project-1.svg",
           link: "#",
-          tags: ["ReactJS", "Design", "CMS"],
+          tags: ["CRM", "Loyalty", "Ordering"],
           featured: true,
         },
         {
-          title: "Weather Compass",
-          description: "Weather forecasting platform with intuitive UI.",
+          title: "Halalproject",
+          description:
+            "Halal Project Indonesia is a sharia-compliant business project investment platform that connects investors with project issuers through listings, proposals, and transparent contract and profit-sharing schemes.",
           image: "/images/projects/project-2.svg",
           link: "#",
-          tags: ["React", "API", "Charts"],
+          tags: ["Fintech", "Syariah", "Investment"],
         },
         {
-          title: "Astro Fest 1.0",
-          description: "Event landing page and ticketing flow.",
+          title: "Platform News",
+          description:
+            "Andalan Peduli’s digital news platform serving breaking news, trending topics, and polls in one ecosystem, complete with search, bookmarks, and member notifications.",
           image: "/images/projects/project-3.svg",
           link: "#",
-          tags: ["Landing", "Branding", "SEO"],
+          tags: ["News", "Media", "Engagement"],
         },
         {
-          title: "Colorize",
-          description: "E-commerce experience with custom product flow.",
+          title: "Marketplace",
+          description:
+            "Marketplace is a B2B marketplace connecting MSMEs/stores with buyers for goods and services procurement, complete with product catalogs, promos, chat, and integrated payments.",
           image: "/images/projects/project-4.svg",
           link: "#",
-          tags: ["Commerce", "Payments", "UX"],
+          tags: ["Marketplace", "B2B", "E-commerce"],
+        },
+        {
+          title: "2RCargo",
+          description:
+            "2RCargo is an integrated logistics platform for shipping goods and vehicles across Indonesia, complete with shipping cost checks, tracking, and invoice/manifest management.",
+          image: "/images/projects/project-4.svg",
+          link: "#",
+          tags: ["Logistics", "Tracking", "Shipping"],
         },
       ],
     },
@@ -222,19 +235,19 @@ export const content: Record<Language, ContentBundle> = {
           title: "Checkout",
           description:
             "Checkout flow for Astro Mart with a clean, premium e-commerce experience.",
-          image: "/images/gallery/gallery-1.svg",
+          image: "/images/gallery/flower-shop.webp",
         },
         {
           title: "Admin Panel",
           description:
             "MSCSC Admin Panel to streamline updates with simple, clear controls.",
-          image: "/images/gallery/gallery-2.svg",
+          image: "/images/gallery/cms-wizzmie.webp",
         },
         {
           title: "Science Tech Club",
           description:
             "MSCSC club landing page with a clean hero and structured content.",
-          image: "/images/gallery/gallery-3.svg",
+          image: "/images/gallery/hajj-umrah.webp",
         },
         {
           title: "Product UI",
@@ -246,7 +259,7 @@ export const content: Record<Language, ContentBundle> = {
           title: "Mobile UI",
           description:
             "Mobile-first UI exploration for rapid scanning and clarity.",
-          image: "/images/gallery/gallery-5.svg",
+          image: "/images/gallery/mobile-ui.webp",
         },
       ],
     },
@@ -363,8 +376,6 @@ export const content: Record<Language, ContentBundle> = {
         },
         {
           title: "Mobile App Development",
-          teaser: "Butuh Mobile App?",
-          revealLabel: "Cek di sini",
           description:
             "Satu codebase untuk iOS dan Android dengan Flutter. UX mulus, performa stabil, dan mudah dikembangkan.",
           icon: "design",
@@ -383,34 +394,45 @@ export const content: Record<Language, ContentBundle> = {
       featuredCta: "Pelajari →",
       items: [
         {
-          title: "MSCSC",
+          title: "WZCRM Memberships",
           description:
-            "Website ReactJS untuk komunitas sains dengan event, profil member, dan konten interaktif.",
+            "Nationwide Restaurant CRM & Ordering. WZCRM adalah platform loyalitas terintegrasi yang menghubungkan puluhan cabang restoran dalam satu ekosistem pemesanan dan program membership yang kuat.",
           image: "/images/projects/project-1.svg",
           link: "#",
-          tags: ["ReactJS", "Design", "CMS"],
+          tags: ["CRM", "Loyalty", "Ordering"],
           featured: true,
         },
         {
-          title: "Weather Compass",
-          description: "Platform cuaca dengan UI yang jelas dan cepat.",
+          title: "Halalproject",
+          description:
+            "Halal Project Indonesia adalah platform investasi proyek bisnis syariah yang mempertemukan pemodal dengan penerbit proyek melalui listing project, proposal, serta skema akad dan bagi hasil yang transparan.",
           image: "/images/projects/project-2.svg",
           link: "#",
-          tags: ["React", "API", "Charts"],
+          tags: ["Fintech", "Syariah", "Investment"],
         },
         {
-          title: "Astro Fest 1.0",
-          description: "Landing page event dengan flow ticketing.",
+          title: "Platform News",
+          description:
+            "Adalah platform berita digital Andalan Peduli yang menyajikan breaking news, trending, dan polling dalam satu ekosistem, dilengkapi fitur pencarian, bookmark, serta notifikasi untuk member.",
           image: "/images/projects/project-3.svg",
           link: "#",
-          tags: ["Landing", "Branding", "SEO"],
+          tags: ["News", "Media", "Engagement"],
         },
         {
-          title: "Colorize",
-          description: "Pengalaman e-commerce dengan custom product flow.",
+          title: "Marketplace",
+          description:
+            "Marketplace adalah platform marketplace B2B yang menghubungkan UMKM/toko dengan pembeli untuk pengadaan barang dan jasa, lengkap dengan katalog produk, promo, chat, dan pembayaran terintegrasi.",
           image: "/images/projects/project-4.svg",
           link: "#",
-          tags: ["Commerce", "Payments", "UX"],
+          tags: ["Marketplace", "B2B", "E-commerce"],
+        },
+        {
+          title: "2RCargo",
+          description:
+            "2RCargo adalah platform logistik terintegrasi untuk pengiriman barang dan kendaraan ke seluruh Indonesia, lengkap dengan cek ongkir, tracking resi, dan pengelolaan invoice/manifest.",
+          image: "/images/projects/project-4.svg",
+          link: "#",
+          tags: ["Logistik", "Tracking", "Pengiriman"],
         },
       ],
     },
@@ -423,19 +445,19 @@ export const content: Record<Language, ContentBundle> = {
           title: "Checkout",
           description:
             "Checkout page untuk Astro Mart dengan pengalaman e-commerce yang rapi dan premium.",
-          image: "/images/gallery/gallery-1.svg",
+          image: "/images/gallery/flower-shop.webp",
         },
         {
           title: "Admin Panel",
           description:
             "Admin Panel MSCSC untuk mempercepat update event dan konten.",
-          image: "/images/gallery/gallery-2.svg",
+          image: "/images/gallery/cms-wizzmie.webp",
         },
         {
           title: "Science Tech Club",
           description:
             "Landing page komunitas dengan hero dan konten yang terstruktur.",
-          image: "/images/gallery/gallery-3.svg",
+          image: "/images/gallery/hajj-umrah.webp",
         },
         {
           title: "Product UI",
@@ -447,7 +469,7 @@ export const content: Record<Language, ContentBundle> = {
           title: "Mobile UI",
           description:
             "Eksplorasi UI mobile untuk scanning cepat.",
-          image: "/images/gallery/gallery-5.svg",
+          image: "/images/gallery/mobile-ui.webp",
         },
       ],
     },
