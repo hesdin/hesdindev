@@ -1,5 +1,9 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type {
+  HTMLAttributeAnchorTarget,
+  MouseEventHandler,
+  ReactNode,
+} from "react";
 
 const baseStyles =
   "inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-6 py-3 text-sm font-semibold transition duration-300";
@@ -21,6 +25,10 @@ const sizes = {
 type ButtonProps = {
   children: ReactNode;
   href?: string;
+  target?: HTMLAttributeAnchorTarget;
+  rel?: string;
+  download?: string | boolean;
+  onClick?: MouseEventHandler<HTMLAnchorElement | HTMLButtonElement>;
   variant?: keyof typeof variants;
   size?: keyof typeof sizes;
   className?: string;
@@ -29,6 +37,10 @@ type ButtonProps = {
 export default function Button({
   children,
   href,
+  target,
+  rel,
+  download,
+  onClick,
   variant = "primary",
   size = "md",
   className = "",
@@ -36,6 +48,23 @@ export default function Button({
   const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
+    const useAnchor = Boolean(download || target || rel || onClick);
+
+    if (useAnchor) {
+      return (
+        <a
+          href={href}
+          className={classes}
+          target={target}
+          rel={target === "_blank" ? rel ?? "noopener noreferrer" : rel}
+          download={download}
+          onClick={onClick}
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
       <Link href={href} className={classes}>
         {children}
@@ -44,7 +73,7 @@ export default function Button({
   }
 
   return (
-    <button type="button" className={classes}>
+    <button type="button" className={classes} onClick={onClick}>
       {children}
     </button>
   );

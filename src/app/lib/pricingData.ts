@@ -41,7 +41,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
     packages: [
       {
         name: "Basic Website",
-        price: "Mulai dari Rp 2.000.000",
+        price: "Mulai dari Rp 2.500.000",
         category: "web",
         features: [
           "1-5 halaman (Home, About, Services, Portfolio, Contact)",
@@ -166,7 +166,7 @@ export const pricingContent: Record<"id" | "en", PricingContent> = {
     packages: [
       {
         name: "Basic Website",
-        price: "Starting at Rp 2.000.000",
+        price: "Starting at Rp 2.500.000",
         category: "web",
         features: [
           "1-5 pages (Home, About, Services, Portfolio, Contact)",

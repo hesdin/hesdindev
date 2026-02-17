@@ -8,9 +8,7 @@ import { useLanguage } from "../ui/LanguageProvider";
 
 export default function Projects() {
   const { t } = useLanguage();
-  const defaultFeatured =
-    t.projects.items.find((project) => project.featured) ??
-    t.projects.items[0];
+  const defaultFeatured = t.projects.items[0];
   const [activeTitle, setActiveTitle] = useState(defaultFeatured.title);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -28,6 +26,8 @@ export default function Projects() {
     t.projects.items.find((project) => project.title === activeTitle) ??
     defaultFeatured;
   const projects = t.projects.items;
+  const isExternalLink =
+    featured.link.startsWith("http://") || featured.link.startsWith("https://");
 
   return (
     <section id="projects" className="py-20">
@@ -48,6 +48,8 @@ export default function Projects() {
               </p>
               <Link
                 href={featured.link}
+                target={isExternalLink ? "_blank" : undefined}
+                rel={isExternalLink ? "noopener noreferrer" : undefined}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[color:var(--text-muted)] transition hover:text-[color:var(--text)]"
               >
                 {t.projects.featuredCta}

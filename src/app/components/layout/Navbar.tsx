@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { type MouseEvent, useState } from "react";
 import Button from "../ui/Button";
 import { useLanguage } from "../ui/LanguageProvider";
 import LanguageToggle from "../ui/LanguageToggle";
@@ -10,6 +10,16 @@ import ThemeToggle from "../ui/ThemeToggle";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useLanguage();
+  const handleContactClick = (
+    event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>
+  ) => {
+    event.preventDefault();
+    const section = document.getElementById("contact");
+    if (!section) return;
+
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    setIsOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[color:var(--border)] bg-[color:var(--surface-nav)]/90 backdrop-blur">
@@ -34,7 +44,12 @@ export default function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <LanguageToggle />
           <ThemeToggle />
-          <Button href="#contact" size="sm" variant="secondary">
+          <Button
+            href="#contact"
+            size="sm"
+            variant="secondary"
+            onClick={handleContactClick}
+          >
             {t.contactButton}
           </Button>
         </div>
@@ -62,7 +77,7 @@ export default function Navbar() {
             <Link
               href="#contact"
               className="inline-flex w-full items-center justify-center rounded-md border border-[color:var(--border-soft)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--text-muted)] transition hover:border-[color:var(--border-strong)] hover:text-[color:var(--text)]"
-              onClick={() => setIsOpen(false)}
+              onClick={handleContactClick}
             >
               {t.contactButton}
             </Link>

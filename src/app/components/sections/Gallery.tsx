@@ -188,12 +188,14 @@ export default function Gallery() {
               <p className="mt-2 text-sm leading-6 text-[color:var(--text-muted)]">
                 {item.description}
               </p>
-              <button
-                type="button"
-                className="mt-3 text-sm font-semibold text-[color:var(--text-muted)]"
-              >
-                {t.gallery.cta}
-              </button>
+              {t.gallery.cta ? (
+                <button
+                  type="button"
+                  className="mt-3 text-sm font-semibold text-[color:var(--text-muted)]"
+                >
+                  {t.gallery.cta}
+                </button>
+              ) : null}
             </article>
           ))}
         </div>

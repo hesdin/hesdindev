@@ -1,5 +1,6 @@
 "use client";
 
+import { type MouseEvent, useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../ui/Button";
 import SectionTitle from "../ui/SectionTitle";
@@ -7,6 +8,46 @@ import { useLanguage } from "../ui/LanguageProvider";
 
 export default function About() {
   const { t } = useLanguage();
+  const [isResumeAvailable, setIsResumeAvailable] = useState(true);
+  const [resumeNotice, setResumeNotice] = useState("");
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const checkResumeFile = async () => {
+      try {
+        const response = await fetch(t.about.resumeUrl, {
+          method: "HEAD",
+          cache: "no-store",
+        });
+        if (isMounted) {
+          setIsResumeAvailable(response.ok);
+        }
+      } catch {
+        if (isMounted) {
+          setIsResumeAvailable(false);
+        }
+      }
+    };
+
+    void checkResumeFile();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [t.about.resumeUrl]);
+
+  const handleResumeClick = (
+    event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>
+  ) => {
+    if (!isResumeAvailable) {
+      event.preventDefault();
+      setResumeNotice("Maaf, file belum tersedia.");
+      return;
+    }
+
+    setResumeNotice("");
+  };
 
   return (
     <section id="about" className="py-20">
@@ -34,13 +75,21 @@ export default function About() {
             </p>
           ))}
           <div className="flex flex-wrap gap-4">
-            <Button href="#" variant="primary">
+            <Button
+              href={t.about.resumeUrl}
+              variant="primary"
+              download={isResumeAvailable}
+              onClick={handleResumeClick}
+            >
               {t.about.ctaPrimary}
             </Button>
             <Button href="#contact" variant="secondary">
               {t.about.ctaSecondary}
             </Button>
           </div>
+          {resumeNotice ? (
+            <p className="text-sm text-[color:var(--text-muted)]">{resumeNotice}</p>
+          ) : null}
         </div>
       </div>
     </section>

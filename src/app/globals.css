@@ -110,7 +110,7 @@
   }
 
   [data-theme="dark"] .cursor-dot {
-    display: none;
+    background: #ffffff;
   }
 
   @media (hover: none), (pointer: coarse) {

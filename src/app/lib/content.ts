@@ -45,6 +45,7 @@ type AboutContent = {
   subtitle: string;
   paragraphs: string[];
   ctaPrimary: string;
+  resumeUrl: string;
   ctaSecondary: string;
 };
 
@@ -111,7 +112,7 @@ const techStack: TechItem[] = [
 
 const socialLinks: SocialLink[] = [
   { name: "Dribbble", href: "#", icon: "dribbble" },
-  { name: "GitHub", href: "https://github.com/hesdin/kurir-servis.git", icon: "github" },
+  { name: "GitHub", href: "https://github.com/hesdin/", icon: "github" },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/hesdin-mukhsin/",
@@ -180,55 +181,56 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     projects: {
-      title: "Reliable Digital Systems",
-      featuredCta: "Learn more →",
+      // title: "Reliable Digital Systems",
+      title: "Selected Portfolio Projects",
+      featuredCta: "View demo →",
       items: [
+        {
+          title: "Invest Project",
+          description:
+            "Invest Project is a sharia-compliant business project investment platform that connects investors with project issuers through listings, proposals, and transparent contract and profit-sharing schemes.",
+          image: "/images/projects/investproject.webp",
+          link: "https://investproject.hesdin.cloud/",
+          tags: ["Fintech", "Syariah", "Investment"],
+        },
+        {
+          title: "Frame Update",
+          description:
+            "Digital news platform serving breaking news, trending topics, and polls in one ecosystem, complete with search, bookmarks, and member notifications.",
+          image: "/images/projects/frameupdate.webp",
+          link: "https://frameupdate.cloud/",
+          tags: ["News", "Media", "Engagement"],
+        },
+        {
+          title: "Marketplace UMKM",
+          description:
+            "Marketplace is a B2B marketplace connecting MSMEs/stores with buyers for goods and services procurement, complete with product catalogs, promos, chat, and integrated payments.",
+          image: "/images/projects/marketplace.webp",
+          link: "https://marketplace.hesdin.cloud/",
+          tags: ["Marketplace", "B2B", "E-commerce"],
+        },
         {
           title: "WZCRM Memberships",
           description:
             "Nationwide Restaurant CRM & Ordering. WZCRM is an integrated loyalty platform connecting dozens of restaurant branches into one ordering ecosystem with a strong membership program.",
-          image: "/images/projects/project-1.svg",
-          link: "#",
+          image: "/images/projects/wizzmie.webp",
+          link: "https://wizzmiecms.devta.id/login",
           tags: ["CRM", "Loyalty", "Ordering"],
           featured: true,
         },
-        {
-          title: "Halalproject",
-          description:
-            "Halal Project Indonesia is a sharia-compliant business project investment platform that connects investors with project issuers through listings, proposals, and transparent contract and profit-sharing schemes.",
-          image: "/images/projects/project-2.svg",
-          link: "#",
-          tags: ["Fintech", "Syariah", "Investment"],
-        },
-        {
-          title: "Platform News",
-          description:
-            "Andalan Peduli’s digital news platform serving breaking news, trending topics, and polls in one ecosystem, complete with search, bookmarks, and member notifications.",
-          image: "/images/projects/project-3.svg",
-          link: "#",
-          tags: ["News", "Media", "Engagement"],
-        },
-        {
-          title: "Marketplace",
-          description:
-            "Marketplace is a B2B marketplace connecting MSMEs/stores with buyers for goods and services procurement, complete with product catalogs, promos, chat, and integrated payments.",
-          image: "/images/projects/project-4.svg",
-          link: "#",
-          tags: ["Marketplace", "B2B", "E-commerce"],
-        },
-        {
-          title: "2RCargo",
-          description:
-            "2RCargo is an integrated logistics platform for shipping goods and vehicles across Indonesia, complete with shipping cost checks, tracking, and invoice/manifest management.",
-          image: "/images/projects/project-4.svg",
-          link: "#",
-          tags: ["Logistics", "Tracking", "Shipping"],
-        },
+        // {
+        //   title: "2RCargo",
+        //   description:
+        //     "2RCargo is an integrated logistics platform for shipping goods and vehicles across Indonesia, complete with shipping cost checks, tracking, and invoice/manifest management.",
+        //   image: "/images/projects/project-4.svg",
+        //   link: "#",
+        //   tags: ["Logistics", "Tracking", "Shipping"],
+        // },
       ],
     },
     gallery: {
       title: "Design Explorations for Clients",
-      counter: "1/5",
+      counter: "1/4",
       cta: "Learn more →",
       items: [
         {
@@ -244,17 +246,17 @@ export const content: Record<Language, ContentBundle> = {
           image: "/images/gallery/cms-wizzmie.webp",
         },
         {
-          title: "Science Tech Club",
+          title: "Umrah Haji",
           description:
-            "MSCSC club landing page with a clean hero and structured content.",
+            "Umrah Haji service landing page with clear package information, schedules, and a structured booking flow.",
           image: "/images/gallery/hajj-umrah.webp",
         },
-        {
-          title: "Product UI",
-          description:
-            "Product showcase UI with strong visual hierarchy and layout.",
-          image: "/images/gallery/gallery-4.svg",
-        },
+        // {
+        //   title: "Product UI",
+        //   description:
+        //     "Product showcase UI with strong visual hierarchy and layout.",
+        //   image: "/images/gallery/gallery-4.svg",
+        // },
         {
           title: "Mobile UI",
           description:
@@ -271,6 +273,7 @@ export const content: Record<Language, ContentBundle> = {
         "Working remotely and collaboratively with client teams to ensure solutions are secure, easy to maintain, and ready to scale.",
       ],
       ctaPrimary: "Download Resume",
+      resumeUrl: "/resume.pdf",
       ctaSecondary: "Contact Me",
     },
     faq: {
@@ -390,56 +393,58 @@ export const content: Record<Language, ContentBundle> = {
       ],
     },
     projects: {
-      title: "Sistem Digital yang Andal",
-      featuredCta: "Pelajari →",
+      // title: "Sistem Digital yang Andal",
+      title: "Beberapa Portofolio Project",
+      featuredCta: "Lihat demo →",
       items: [
+        {
+          title: "Invest Project",
+          description:
+            "Invest Project adalah platform investasi proyek bisnis syariah yang mempertemukan pemodal dengan penerbit proyek melalui listing project, proposal, serta skema akad dan bagi hasil yang transparan.",
+          image: "/images/projects/investproject.webp",
+          link: "https://investproject.hesdin.cloud/",
+          tags: ["Fintech", "Syariah", "Investment"],
+        },
+        {
+          title: "Frame Update",
+          description:
+            "Platform berita digital yang menyajikan breaking news, trending, dan polling dalam satu ekosistem, dilengkapi fitur pencarian, bookmark, serta notifikasi untuk member.",
+          image: "/images/projects/frameupdate.webp",
+          link: "https://frameupdate.cloud/",
+          tags: ["News", "Media", "Engagement"],
+        },
+        {
+          title: "Marketplace UMKM",
+          description:
+            "Marketplace adalah platform marketplace B2B yang menghubungkan UMKM/toko dengan pembeli untuk pengadaan barang dan jasa, lengkap dengan katalog produk, promo, chat, dan pembayaran terintegrasi.",
+          image: "/images/projects/marketplace.webp",
+          link: "https://marketplace.hesdin.cloud/",
+          tags: ["Marketplace", "B2B", "E-commerce"],
+        },
         {
           title: "WZCRM Memberships",
           description:
             "Nationwide Restaurant CRM & Ordering. WZCRM adalah platform loyalitas terintegrasi yang menghubungkan puluhan cabang restoran dalam satu ekosistem pemesanan dan program membership yang kuat.",
-          image: "/images/projects/project-1.svg",
-          link: "#",
+          image: "/images/projects/wizzmie.webp",
+          link: "https://wizzmiecms.devta.id/login",
           tags: ["CRM", "Loyalty", "Ordering"],
           featured: true,
         },
-        {
-          title: "Halalproject",
-          description:
-            "Halal Project Indonesia adalah platform investasi proyek bisnis syariah yang mempertemukan pemodal dengan penerbit proyek melalui listing project, proposal, serta skema akad dan bagi hasil yang transparan.",
-          image: "/images/projects/project-2.svg",
-          link: "#",
-          tags: ["Fintech", "Syariah", "Investment"],
-        },
-        {
-          title: "Platform News",
-          description:
-            "Adalah platform berita digital Andalan Peduli yang menyajikan breaking news, trending, dan polling dalam satu ekosistem, dilengkapi fitur pencarian, bookmark, serta notifikasi untuk member.",
-          image: "/images/projects/project-3.svg",
-          link: "#",
-          tags: ["News", "Media", "Engagement"],
-        },
-        {
-          title: "Marketplace",
-          description:
-            "Marketplace adalah platform marketplace B2B yang menghubungkan UMKM/toko dengan pembeli untuk pengadaan barang dan jasa, lengkap dengan katalog produk, promo, chat, dan pembayaran terintegrasi.",
-          image: "/images/projects/project-4.svg",
-          link: "#",
-          tags: ["Marketplace", "B2B", "E-commerce"],
-        },
-        {
-          title: "2RCargo",
-          description:
-            "2RCargo adalah platform logistik terintegrasi untuk pengiriman barang dan kendaraan ke seluruh Indonesia, lengkap dengan cek ongkir, tracking resi, dan pengelolaan invoice/manifest.",
-          image: "/images/projects/project-4.svg",
-          link: "#",
-          tags: ["Logistik", "Tracking", "Pengiriman"],
-        },
+        // {
+        //   title: "2RCargo",
+        //   description:
+        //     "2RCargo adalah platform logistik terintegrasi untuk pengiriman barang dan kendaraan ke seluruh Indonesia, lengkap dengan cek ongkir, tracking resi, dan pengelolaan invoice/manifest.",
+        //   image: "/images/projects/project-4.svg",
+        //   link: "#",
+        //   tags: ["Logistik", "Tracking", "Pengiriman"],
+        // },
       ],
     },
     gallery: {
       title: "Eksplorasi Desain untuk Klien",
-      counter: "1/5",
-      cta: "Pelajari →",
+      counter: "1/4",
+      // cta: "Pelajari →",
+      cta: "",
       items: [
         {
           title: "Checkout",
@@ -450,37 +455,38 @@ export const content: Record<Language, ContentBundle> = {
         {
           title: "Admin Panel",
           description:
-            "Admin Panel MSCSC untuk mempercepat update event dan konten.",
+            "Admin Panel WIZZMIE untuk mempercepat update event dan konten.",
           image: "/images/gallery/cms-wizzmie.webp",
         },
         {
-          title: "Science Tech Club",
+          title: "Umrah Haji",
           description:
-            "Landing page komunitas dengan hero dan konten yang terstruktur.",
+            "Landing page layanan Umrah Haji dengan informasi paket, jadwal, dan alur pemesanan yang terstruktur.",
           image: "/images/gallery/hajj-umrah.webp",
         },
-        {
-          title: "Product UI",
-          description:
-            "UI produk dengan hirarki visual yang jelas.",
-          image: "/images/gallery/gallery-4.svg",
-        },
+        // {
+        //   title: "Product UI",
+        //   description:
+        //     "UI produk dengan hirarki visual yang jelas.",
+        //   image: "/images/gallery/gallery-4.svg",
+        // },
         {
           title: "Mobile UI",
           description:
-            "Eksplorasi UI mobile untuk scanning cepat.",
+            "Eksplorasi UI mobile dengan layout, hirarki, dan interaksi intuitif untuk pencarian cepat.",
           image: "/images/gallery/mobile-ui.webp",
         },
       ],
     },
     about: {
       title: "Pengalaman yang Saya Miliki",
-      subtitle: "Perjalanan saya dimulai sejak 2022.",
+      subtitle: "Perjalanan saya dimulai sejak 2020.",
       paragraphs: [
-        "Sejak 2022, pengalaman menangani sistem enterprise membentuk standar kualitas dan profesionalisme engineering yang dijaga hingga saat ini.",
+        "Sejak 2020, pengalaman menangani sistem enterprise membentuk standar kualitas dan profesionalisme engineering yang dijaga hingga saat ini.",
         "Bekerja secara remote dan kolaboratif bersama tim klien untuk memastikan solusi yang dibangun aman, mudah dirawat, dan siap dikembangkan.",
       ],
       ctaPrimary: "Unduh Resume",
+      resumeUrl: "/resume.pdf",
       ctaSecondary: "Hubungi Saya",
     },
     faq: {
